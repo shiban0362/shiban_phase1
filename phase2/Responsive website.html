@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Page</title>
+
+<style>
+
+/* DEFAULT = MOBILE FIRST */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* NAVBAR */
+.nav {
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* CONTENT */
+.container {
+    display: flex;
+    flex-direction: column; /* mobile = column */
+}
+
+.box {
+    padding: 20px;
+    margin: 10px;
+    background: lightblue;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* side by side */
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+    .box {
+        background: orange;
+        font-size: 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="nav">Responsive Navbar</div>
+
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+</body>
+</html>

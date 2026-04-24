@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Position Example</title>
+<style>
+
+/* FIXED NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* IMAGE CONTAINER */
+.container {
+    position: relative;
+    width: 300px;
+    margin-top: 80px; /* space for navbar */
+}
+
+/* IMAGE */
+.container img {
+    width: 100%;
+}
+
+/* BADGE */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">Fixed Navbar</div>
+
+<div class="container">
+    <img src="https://th.bing.com/th/id/OIP.MRG2ANMPxDAVRLd4a8PmeAHaEK?w=255&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+    <div class="badge">NEW</div>
+</div>
+
+</body>
+</html>

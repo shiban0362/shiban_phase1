@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flexbox Demo</title>
+<style>
+
+/* BODY */
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+}
+
+/* FLEX CONTAINER */
+.container {
+    display: flex;
+
+    /* MAIN PROPERTIES */
+    flex-direction: row;          /* row / column */
+    justify-content: space-around; /* horizontal alignment */
+    align-items: center;          /* vertical alignment */
+    flex-wrap: wrap;              /* allow wrapping */
+    gap: 10px;
+
+    background: #ddd;
+    padding: 20px;
+    height: 300px;
+}
+
+/* FLEX ITEMS */
+.box {
+    background: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+
+    /* FLEX ITEM PROPERTIES */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
+
+/* DIFFERENT ITEM BEHAVIOR */
+.box:nth-child(2) {
+    flex-grow: 2; /* grows more */
+    background: orange;
+}
+
+.box:nth-child(3) {
+    flex-shrink: 2; /* shrinks faster */
+    background: crimson;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Flexbox Layout Example</h2>
+
+<div class="container">
+    <div class="box">1</div>
+    <div class="box">2 (grow)</div>
+    <div class="box">3 (shrink)</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+
+</body>
+</html>
